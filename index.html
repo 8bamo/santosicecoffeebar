@@ -92,16 +92,16 @@
           </div>
 
           <div class="hero-visuals" aria-label="Eindrücke aus dem Santos">
-            <figure class="hero-image hero-image-main">
+            <a class="hero-image hero-image-main lightbox-trigger" href="./santos-iceandcoffeebar.jpg" data-lightbox-caption="Innenansicht der neu eröffneten Santos ICE & COFFEE BAR">
               <img
                 src="./santos-iceandcoffeebar.jpg"
                 alt="Innenansicht der neu eröffneten Santos ICE & COFFEE BAR"
                 loading="eager"
               />
-            </figure>
-            <figure class="hero-image hero-image-small">
+            </a>
+            <a class="hero-image hero-image-small lightbox-trigger" href="./santos_eis.jpg" data-lightbox-caption="Eisbecher im Santos">
               <img src="./santos_eis.jpg" alt="Eisbecher im Santos" loading="lazy" />
-            </figure>
+            </a>
             <figure class="hero-image hero-image-badge">
               <img src="./logo.jpg" alt="Santos Logo" loading="lazy" />
             </figure>
@@ -153,23 +153,33 @@
           </div>
           <div class="gallery-grid">
             <figure class="gallery-card gallery-card-large">
-              <img src="./ein tag im santos iceandcoffeebar.jpg" alt="Ein Tag im Santos ICE & COFFEE BAR" loading="lazy" />
+              <a class="lightbox-trigger" href="./ein tag im santos iceandcoffeebar.jpg" data-lightbox-caption="Ein Tag im Santos ICE & COFFEE BAR">
+                <img src="./ein tag im santos iceandcoffeebar.jpg" alt="Ein Tag im Santos ICE & COFFEE BAR" loading="lazy" />
+              </a>
               <figcaption>Der Raum wirkt hell, offen und direkt auf Begegnung angelegt.</figcaption>
             </figure>
             <figure class="gallery-card">
-              <img src="./pasteldenata.jpg" alt="Pastel de Nata im Santos" loading="lazy" />
+              <a class="lightbox-trigger" href="./pasteldenata.jpg" data-lightbox-caption="Pastel de Nata im Santos">
+                <img src="./pasteldenata.jpg" alt="Pastel de Nata im Santos" loading="lazy" />
+              </a>
               <figcaption>Pastel de Nata für den kurzen Espresso-Moment.</figcaption>
             </figure>
             <figure class="gallery-card">
-              <img src="./cornetto.jpg" alt="Cornetto und Cappuccino im Santos" loading="lazy" />
+              <a class="lightbox-trigger" href="./cornetto.jpg" data-lightbox-caption="Cornetto und Cappuccino im Santos">
+                <img src="./cornetto.jpg" alt="Cornetto und Cappuccino im Santos" loading="lazy" />
+              </a>
               <figcaption>Cornetto, Cappuccino und ruhiger Start in den Tag.</figcaption>
             </figure>
             <figure class="gallery-card">
-              <img src="./matcha limette eis.jpg" alt="Matcha-Limette-Eis bei Santos" loading="lazy" />
+              <a class="lightbox-trigger" href="./matcha limette eis.jpg" data-lightbox-caption="Matcha-Limette-Eis bei Santos">
+                <img src="./matcha limette eis.jpg" alt="Matcha-Limette-Eis bei Santos" loading="lazy" />
+              </a>
               <figcaption>Eis mit eigener Handschrift statt Standardtheke.</figcaption>
             </figure>
             <figure class="gallery-card">
-              <img src="./santos_eis.jpg" alt="Eis im Santos ICE & COFFEE BAR" loading="lazy" />
+              <a class="lightbox-trigger" href="./santos_eis.jpg" data-lightbox-caption="Kugelweise Glück mitten in Ludwigsburg">
+                <img src="./santos_eis.jpg" alt="Eis im Santos ICE & COFFEE BAR" loading="lazy" />
+              </a>
               <figcaption>Kugelweise Glück mitten in Ludwigsburg.</figcaption>
             </figure>
           </div>
@@ -280,13 +290,13 @@
             <h2>Der neue Laden wird bereits wahrgenommen.</h2>
           </div>
           <div class="press-layout">
-            <figure class="press-image">
+            <a class="press-image lightbox-trigger" href="./santos-iceandcoffeebar-in-der-presse.jpg" data-lightbox-caption="Santos ICE & COFFEE BAR in der Presse">
               <img
                 src="./santos-iceandcoffeebar-in-der-presse.jpg"
                 alt="Santos ICE & COFFEE BAR in der Presse"
                 loading="lazy"
               />
-            </figure>
+            </a>
             <div class="press-copy">
               <p>
                 Für eine Neueröffnung ist Sichtbarkeit entscheidend. Die Kombination
@@ -334,16 +344,28 @@
           <p class="eyebrow">Santos ICE &amp; COFFEE BAR</p>
           <p>Kirchstraße 18, 71634 Ludwigsburg</p>
         </div>
-        <div class="footer-actions">
+        <div class="footer-actions footer-links">
           <a class="button button-solid" href="https://maps.google.com/?q=Kirchstraße+18+71634+Ludwigsburg" target="_blank" rel="noreferrer">
             Google Maps
           </a>
           <a class="button button-ghost" href="https://www.instagram.com/santos_iceandcoffeebar/" target="_blank" rel="noreferrer">
             Instagram
           </a>
+          <a class="footer-legal-link" href="./impressum.html">Impressum</a>
+          <a class="footer-legal-link" href="./datenschutz.html">Datenschutz</a>
         </div>
       </footer>
     </div>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Lightbox schließen">Schließen</button>
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
