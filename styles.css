@@ -52,6 +52,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 p {
   margin: 0;
   color: var(--muted);
@@ -112,17 +117,13 @@ h3 {
   gap: 0.85rem;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 2.75rem;
-  height: 2.75rem;
+.brand-logo {
+  width: 3.1rem;
+  height: 3.1rem;
   border-radius: 999px;
-  background: var(--accent);
-  color: #f6efe7;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.65rem;
-  font-weight: 700;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  background: #fff8f0;
 }
 
 .brand-text {
@@ -226,6 +227,20 @@ h3 {
   display: grid;
   align-content: end;
   gap: 0.65rem;
+}
+
+.hero-card-logo {
+  place-items: center;
+  min-height: 15rem;
+  background: #fbf7f1;
+}
+
+.hero-logo {
+  width: min(100%, 15rem);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid var(--line);
 }
 
 .hero-card-primary {
@@ -418,4 +433,3 @@ h3 {
     font-size: clamp(2.6rem, 12vw, 4rem);
   }
 }
-
