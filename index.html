@@ -66,7 +66,7 @@
         <nav class="site-nav" aria-label="Hauptnavigation">
           <a href="#concept">Konzept</a>
           <a href="#gallery">Bilder</a>
-          <a href="#press">Presse</a>
+          <a href="#events">Anfragen</a>
           <a href="#visit">Besuch</a>
         </nav>
       </header>
@@ -75,14 +75,14 @@
         <section class="hero">
           <div class="hero-copy">
             <p class="eyebrow">Neu eröffnet in Ludwigsburg</p>
-            <h1>Santos bringt Eis, Kaffee und Aperitivo in die Kirchstraße.</h1>
+            <h1>Santos verbindet Eis, Kaffee und Aperitivo in der Kirchstraße.</h1>
             <p class="hero-text">
               Ein neuer Treffpunkt für Cappuccino am Vormittag, Kugel-Eis am
               Nachmittag, Pastel de Nata zwischendurch und Spritz zum Abend.
             </p>
             <div class="hero-actions">
               <a class="button button-solid" href="#visit">Jetzt besuchen</a>
-              <a class="button button-ghost" href="#gallery">Bilder ansehen</a>
+              <a class="button button-ghost" href="#events">Event anfragen</a>
             </div>
             <ul class="hero-facts" aria-label="Kurze Informationen zu Santos">
               <li>Kirchstraße 18, 71634 Ludwigsburg</li>
@@ -204,6 +204,76 @@
           </div>
         </section>
 
+        <section class="events" id="events">
+          <div class="section-heading">
+            <p class="eyebrow">Firmenfeier &amp; Events</p>
+            <h2>Anfragen in zwei Minuten vorbereiten.</h2>
+          </div>
+          <div class="events-layout">
+            <div class="events-copy">
+              <p>
+                Ob Firmenfeier, Teamabend, kleine Geburtstagsrunde oder lockerer
+                Empfang: Über das Formular lässt sich eine Anfrage direkt mit allen
+                wichtigen Angaben vorbereiten.
+              </p>
+              <div class="event-tags" aria-label="Mögliche Anlässe">
+                <span>Firmenfeier</span>
+                <span>Afterwork</span>
+                <span>Geburtstag</span>
+                <span>Empfang</span>
+              </div>
+              <details class="events-detail">
+                <summary>Wie funktioniert die Anfrage?</summary>
+                <p>
+                  Nach dem Absenden öffnet sich eine vorbereitete E-Mail mit allen
+                  Formulardaten. So kann die Anfrage direkt verschickt oder vor dem
+                  Versand noch angepasst werden.
+                </p>
+              </details>
+            </div>
+
+            <form class="event-form" id="event-form" data-recipient="info@santos-iceandcoffeebar.de" novalidate>
+              <div class="form-grid">
+                <label>
+                  <span>Name</span>
+                  <input type="text" name="name" autocomplete="name" required />
+                </label>
+                <label>
+                  <span>E-Mail</span>
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
+                <label>
+                  <span>Firma oder Anlass</span>
+                  <input type="text" name="occasion" placeholder="z. B. Firmenfeier oder Geburtstag" required />
+                </label>
+                <label>
+                  <span>Gewünschtes Datum</span>
+                  <input type="date" name="date" required />
+                </label>
+                <label>
+                  <span>Personenzahl</span>
+                  <input type="number" name="guests" min="5" max="250" placeholder="z. B. 35" required />
+                </label>
+                <label>
+                  <span>Telefon</span>
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="optional" />
+                </label>
+              </div>
+              <label class="form-message">
+                <span>Wünsche und Details</span>
+                <textarea name="message" rows="5" placeholder="Ablauf, Uhrzeit, Wunsch nach Drinks, Eis, Kaffee oder reserviertem Bereich"></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="button button-solid" type="submit">Anfrage vorbereiten</button>
+                <a class="button button-ghost" href="https://www.instagram.com/santos_iceandcoffeebar/" target="_blank" rel="noreferrer">
+                  Instagram öffnen
+                </a>
+              </div>
+              <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
         <section class="press" id="press">
           <div class="section-heading">
             <p class="eyebrow">Presse &amp; Aufmerksamkeit</p>
@@ -274,5 +344,6 @@
         </div>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -71,6 +71,12 @@ ul {
   list-style: none;
 }
 
+input,
+textarea,
+button {
+  font: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -100,6 +106,7 @@ h3 {
 .concept-grid,
 .gallery-grid,
 .specials-grid,
+.events-layout,
 .press-layout,
 .visit-layout {
   border: 1px solid var(--line);
@@ -170,7 +177,8 @@ h3 {
 .press,
 .specials,
 .visit,
-.concept {
+.concept,
+.events {
   margin-top: 1rem;
 }
 
@@ -179,7 +187,8 @@ h3 {
 .gallery,
 .specials,
 .press,
-.visit {
+.visit,
+.events {
   padding: 1.4rem;
 }
 
@@ -203,17 +212,19 @@ h3 {
 }
 
 .hero h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
-  max-width: 11ch;
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  max-width: 13ch;
 }
 
 .hero-text {
   max-width: 58ch;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
 }
 
 .hero-actions,
-.footer-actions {
+.footer-actions,
+.form-actions,
+.event-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
@@ -227,6 +238,9 @@ h3 {
   padding: 0.8rem 1.2rem;
   border: 1px solid var(--ink);
   font-weight: 700;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
 }
 
 .button-solid {
@@ -267,11 +281,15 @@ h3 {
   gap: 1rem;
 }
 
-.hero-image {
+.hero-image,
+.gallery-card,
+.press-image,
+.events-copy,
+.event-form {
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  background: #fbf7f1;
+  background: rgba(255, 251, 245, 0.9);
 }
 
 .hero-image img,
@@ -315,12 +333,13 @@ h3 {
 }
 
 .section-heading h2 {
-  font-size: clamp(2.2rem, 5vw, 4.1rem);
+  font-size: clamp(2rem, 4.4vw, 3.7rem);
 }
 
 .concept-grid,
 .gallery-grid,
 .specials-grid,
+.events-layout,
 .press-layout,
 .visit-layout {
   display: grid;
@@ -352,12 +371,12 @@ h3 {
   align-items: stretch;
 }
 
-.gallery-card,
-.press-image {
-  margin: 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: rgba(255, 251, 245, 0.9);
+.gallery-card {
+  transition: transform 180ms ease-out;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
 }
 
 .gallery-card-large {
@@ -383,6 +402,11 @@ h3 {
   display: grid;
   align-content: space-between;
   border: 1px solid var(--line);
+  transition: transform 180ms ease-out;
+}
+
+.special-card:hover {
+  transform: translateY(-4px);
 }
 
 .accent-sand {
@@ -405,6 +429,93 @@ h3 {
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.events-layout {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: stretch;
+}
+
+.events-copy,
+.event-form {
+  padding: 1rem;
+}
+
+.events-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-tags span {
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--line);
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.events-detail {
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+}
+
+.events-detail summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.events-detail p {
+  margin-top: 0.75rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.event-form label {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.event-form span {
+  font-weight: 700;
+}
+
+.event-form input,
+.event-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fffaf4;
+  padding: 0.85rem 0.9rem;
+  color: var(--ink);
+}
+
+.event-form input:focus,
+.event-form textarea:focus {
+  outline: 2px solid transparent;
+  border-color: var(--accent);
+}
+
+.form-message {
+  margin-top: 0.9rem;
+}
+
+.form-actions {
+  margin-top: 1rem;
+}
+
+.form-feedback {
+  min-height: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.form-feedback.is-success {
+  color: #2d5a32;
+}
+
+.form-feedback.is-error {
+  color: #8a2f2f;
 }
 
 .press-layout {
@@ -436,13 +547,15 @@ h3 {
 @media (max-width: 1080px) {
   .gallery-grid,
   .specials-grid,
-  .visit-layout {
+  .visit-layout,
+  .form-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .press-layout,
   .hero,
-  .concept-grid {
+  .concept-grid,
+  .events-layout {
     grid-template-columns: 1fr;
   }
 
@@ -463,6 +576,7 @@ h3 {
   .concept,
   .gallery,
   .specials,
+  .events,
   .press,
   .visit {
     padding: 1rem;
@@ -481,7 +595,8 @@ h3 {
   .hero-visuals,
   .gallery-grid,
   .specials-grid,
-  .visit-layout {
+  .visit-layout,
+  .form-grid {
     grid-template-columns: 1fr;
   }
 
@@ -498,6 +613,6 @@ h3 {
   }
 
   .hero h1 {
-    font-size: clamp(2.8rem, 12vw, 4.2rem);
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
   }
 }
