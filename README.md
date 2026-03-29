@@ -1,16 +1,16 @@
-# Santos ICE & COFFEE BAR
+﻿# Santos ICE & COFFEE BAR
 
-Statische Landingpage fuer Santos in Ludwigsburg.
+Statische Landingpage für Santos in Ludwigsburg.
 
 ## Dateien
 
 - `index.html` - Seitenstruktur und Inhalte
 - `styles.css` - Gestaltung und responsive Layouts
-- `script.js` - frei fuer spaetere Interaktionen
+- `script.js` - frei für spätere Interaktionen
 
 ## Lokal testen
 
-`index.html` direkt im Browser oeffnen.
+`index.html` direkt im Browser öffnen.
 
 ## GitHub
 
