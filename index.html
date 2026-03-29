@@ -3,11 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Santos ICE &amp; COFFEE BAR</title>
+    <title>Santos ICE &amp; COFFEE BAR | Neu eröffnet in Ludwigsburg</title>
     <meta
       name="description"
-      content="Santos ICE & COFFEE BAR in Ludwigsburg: Kaffee, Eis, Pastel de Nata und entspannte Bar-Vibes an der Kirchstraße 18."
+      content="Santos ICE & COFFEE BAR ist neu eröffnet in Ludwigsburg. Kaffee, Eis, Pastel de Nata, Spritz und entspannte Café-Bar-Vibes in der Kirchstraße 18."
     />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#1f1a17" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Santos ICE & COFFEE BAR | Neu eröffnet in Ludwigsburg" />
+    <meta
+      property="og:description"
+      content="Neu eröffnet in Ludwigsburg: Santos ICE & COFFEE BAR mit Eis, Kaffee, Pastel de Nata und Spritz in der Kirchstraße 18."
+    />
+    <meta property="og:image" content="./santos-iceandcoffeebar.jpg" />
+    <meta property="og:image:alt" content="Innenraum der Santos ICE & COFFEE BAR in Ludwigsburg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Santos ICE & COFFEE BAR | Neu eröffnet in Ludwigsburg" />
+    <meta
+      name="twitter:description"
+      content="Kaffee, Eis, Pastel de Nata und Spritz in der Kirchstraße 18 in Ludwigsburg."
+    />
+    <meta name="twitter:image" content="./santos-iceandcoffeebar.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +34,23 @@
     />
     <link rel="icon" type="image/jpeg" href="./logo.jpg" />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Santos ICE & COFFEE BAR",
+        "description": "Neu eröffnetes Café mit Eis, Kaffee, Pastel de Nata und Spritz in Ludwigsburg.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kirchstraße 18",
+          "postalCode": "71634",
+          "addressLocality": "Ludwigsburg",
+          "addressCountry": "DE"
+        },
+        "servesCuisine": ["Coffee", "Ice Cream", "Pastry", "Spritz"],
+        "sameAs": ["https://www.instagram.com/santos_iceandcoffeebar/"]
+      }
+    </script>
   </head>
   <body>
     <div class="page-shell">
@@ -30,133 +65,170 @@
 
         <nav class="site-nav" aria-label="Hauptnavigation">
           <a href="#concept">Konzept</a>
-          <a href="#specials">Highlights</a>
+          <a href="#gallery">Bilder</a>
+          <a href="#press">Presse</a>
           <a href="#visit">Besuch</a>
-          <a href="#contact">Kontakt</a>
         </nav>
       </header>
 
       <main id="top">
         <section class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">Ludwigsburg, Kirchstraße 18</p>
-            <h1>Espresso-Bar, Eistheke und Aperitivo an einem Ort.</h1>
+            <p class="eyebrow">Neu eröffnet in Ludwigsburg</p>
+            <h1>Santos bringt Eis, Kaffee und Aperitivo in die Kirchstraße.</h1>
             <p class="hero-text">
-              Santos verbindet cremiges Eis, knusprige Pastel de Nata, Cappuccino
-              und Spritz-Getränke zu einer Adresse, die tagsüber leicht wirkt und
-              abends urban bleibt.
+              Ein neuer Treffpunkt für Cappuccino am Vormittag, Kugel-Eis am
+              Nachmittag, Pastel de Nata zwischendurch und Spritz zum Abend.
             </p>
             <div class="hero-actions">
-              <a class="button button-solid" href="#visit">Route planen</a>
-              <a class="button button-ghost" href="#specials">Angebot ansehen</a>
+              <a class="button button-solid" href="#visit">Jetzt besuchen</a>
+              <a class="button button-ghost" href="#gallery">Bilder ansehen</a>
             </div>
+            <ul class="hero-facts" aria-label="Kurze Informationen zu Santos">
+              <li>Kirchstraße 18, 71634 Ludwigsburg</li>
+              <li>Kaffee, Eis, Pastel de Nata, Spritz</li>
+              <li>Neu eröffnet und bereits in der Presse</li>
+            </ul>
           </div>
 
-          <div class="hero-panel" aria-label="Markenstimmung">
-            <div class="hero-card hero-card-logo">
-              <img class="hero-logo" src="./logo.jpg" alt="Santos Logo auf heller Fläche" />
-            </div>
-            <div class="hero-card hero-card-primary">
-              <span class="card-label">Heute bei Santos</span>
-              <strong>Kugelweise Glück.</strong>
-              <p>
-                Wechselnde Eissorten, milchige Kaffees und ein Tresen, an dem sich
-                Nachmittag und Aperitif treffen.
-              </p>
-            </div>
-            <div class="hero-card hero-card-secondary">
-              <span class="card-label">Instagram</span>
-              <strong>@santos_iceandcoffeebar</strong>
-              <p>16 Beiträge, lokale Community und echte Thekenmomente.</p>
-            </div>
+          <div class="hero-visuals" aria-label="Eindrücke aus dem Santos">
+            <figure class="hero-image hero-image-main">
+              <img
+                src="./santos-iceandcoffeebar.jpg"
+                alt="Innenansicht der neu eröffneten Santos ICE & COFFEE BAR"
+                loading="eager"
+              />
+            </figure>
+            <figure class="hero-image hero-image-small">
+              <img src="./santos_eis.jpg" alt="Eisbecher im Santos" loading="lazy" />
+            </figure>
+            <figure class="hero-image hero-image-badge">
+              <img src="./logo.jpg" alt="Santos Logo" loading="lazy" />
+            </figure>
           </div>
+        </section>
+
+        <section class="opening-note" aria-label="Hinweis zur Neueröffnung">
+          <p class="eyebrow">Jetzt neu</p>
+          <p>
+            Santos ICE &amp; COFFEE BAR ist neu in Ludwigsburg und verbindet
+            Café, Eistheke und lockere Bar-Atmosphäre in einer klaren Adresse.
+          </p>
         </section>
 
         <section class="concept" id="concept">
           <div class="section-heading">
-            <p class="eyebrow">Das Gefühl</p>
-            <h2>Warm, hell und ein wenig mediterran.</h2>
+            <p class="eyebrow">Das Konzept</p>
+            <h2>Ein Ort für Espresso, Eis und späte Nachmittage.</h2>
           </div>
           <div class="concept-grid">
             <article>
               <h3>Kaffee</h3>
               <p>
-                Sauber extrahierter Espresso, Cappuccino mit feiner Textur und ein
-                ruhiger Platz für den ersten Kaffee des Tages.
+                Sauber extrahierter Espresso, cremiger Cappuccino und eine Theke,
+                die nach echter Tagesroutine statt nach Kette wirkt.
               </p>
             </article>
             <article>
               <h3>Eis</h3>
               <p>
-                Kugel-Eis als feste Hauptrolle statt Nebenprodukt. Schnell, frisch
-                und sichtbar inszeniert.
+                Kugelweise serviert, frisch präsentiert und sichtbar Teil der
+                Identität statt bloße Ergänzung.
               </p>
             </article>
             <article>
-              <h3>Bar</h3>
+              <h3>Bar-Moment</h3>
               <p>
-                Wenn der Tag kippt, übernimmt der Spritz. Leicht, unkompliziert
-                und passend zum Stadtabend.
+                Wenn der Tag kippt, übernimmt der Spritz. Leicht, urban und
+                passend für einen Zwischenstopp in der Innenstadt.
               </p>
             </article>
           </div>
         </section>
 
-        <section class="specials" id="specials">
+        <section class="gallery" id="gallery">
+          <div class="section-heading">
+            <p class="eyebrow">Bilder aus dem Laden</p>
+            <h2>Originale Eindrücke statt Platzhalter.</h2>
+          </div>
+          <div class="gallery-grid">
+            <figure class="gallery-card gallery-card-large">
+              <img src="./ein tag im santos iceandcoffeebar.jpg" alt="Ein Tag im Santos ICE & COFFEE BAR" loading="lazy" />
+              <figcaption>Der Raum wirkt hell, offen und direkt auf Begegnung angelegt.</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./pasteldenata.jpg" alt="Pastel de Nata im Santos" loading="lazy" />
+              <figcaption>Pastel de Nata für den kurzen Espresso-Moment.</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./cornetto.jpg" alt="Cornetto und Cappuccino im Santos" loading="lazy" />
+              <figcaption>Cornetto, Cappuccino und ruhiger Start in den Tag.</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./matcha limette eis.jpg" alt="Matcha-Limette-Eis bei Santos" loading="lazy" />
+              <figcaption>Eis mit eigener Handschrift statt Standardtheke.</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="./santos_eis.jpg" alt="Eis im Santos ICE & COFFEE BAR" loading="lazy" />
+              <figcaption>Kugelweise Glück mitten in Ludwigsburg.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="specials">
           <div class="section-heading">
             <p class="eyebrow">Highlights</p>
-            <h2>Vier Gründe, nicht nur vorbeizulaufen.</h2>
+            <h2>Vier Gründe, warum Santos schnell hängen bleibt.</h2>
           </div>
           <div class="specials-grid">
             <article class="special-card accent-sand">
               <span class="special-index">01</span>
               <h3>Pastel de Nata</h3>
-              <p>
-                Blättrig, karamellisiert und genau richtig zu einem kurzen Espresso.
-              </p>
+              <p>Blättrig, karamellisiert und genau richtig zu einem kurzen Espresso.</p>
             </article>
             <article class="special-card accent-olive">
               <span class="special-index">02</span>
               <h3>Cappuccino</h3>
-              <p>
-                Cremig, ruhig und ohne unnötige Show. Der Klassiker bleibt der
-                Maßstab.
-              </p>
+              <p>Cremig, ruhig und ohne unnötige Show. Der Klassiker bleibt der Maßstab.</p>
             </article>
             <article class="special-card accent-terra">
               <span class="special-index">03</span>
               <h3>Eis nach Lust</h3>
-              <p>
-                Kugelweise serviert, spontan gewählt und als kleine Pause mitten in
-                der Stadt gedacht.
-              </p>
+              <p>Kugelweise serviert, spontan gewählt und als kleine Pause in der Stadt gedacht.</p>
             </article>
             <article class="special-card accent-night">
               <span class="special-index">04</span>
               <h3>Spritz Hour</h3>
-              <p>
-                Für den späteren Nachmittag: leichte Drinks, Thekenatmosphäre und
-                ein sauberer Übergang in den Abend.
-              </p>
+              <p>Für den späteren Nachmittag: leichte Drinks, Thekenatmosphäre und Stadtabend.</p>
             </article>
           </div>
         </section>
 
-        <section class="showcase">
-          <div class="showcase-copy">
-            <p class="eyebrow">Schneller Überblick</p>
-            <h2>Kein generisches Café. Eher ein heller Treffpunkt mit Takt.</h2>
-            <p>
-              Die Website ist bewusst wie eine kompakte Visitenkarte aufgebaut:
-              klare Aussage, markante Materialität und direkte Wege zu Standort,
-              Kontakt und Socials.
-            </p>
+        <section class="press" id="press">
+          <div class="section-heading">
+            <p class="eyebrow">Presse &amp; Aufmerksamkeit</p>
+            <h2>Der neue Laden wird bereits wahrgenommen.</h2>
           </div>
-          <div class="showcase-board" aria-hidden="true">
-            <div class="board-tile board-tile-large">ICE</div>
-            <div class="board-tile">COFFEE</div>
-            <div class="board-tile">SPRITZ</div>
-            <div class="board-tile board-tile-outline">NATA</div>
+          <div class="press-layout">
+            <figure class="press-image">
+              <img
+                src="./santos-iceandcoffeebar-in-der-presse.jpg"
+                alt="Santos ICE & COFFEE BAR in der Presse"
+                loading="lazy"
+              />
+            </figure>
+            <div class="press-copy">
+              <p>
+                Für eine Neueröffnung ist Sichtbarkeit entscheidend. Die Kombination
+                aus klarer Adresse, starkem Social-Auftritt und Pressefoto hilft,
+                lokal schneller gefunden und erinnert zu werden.
+              </p>
+              <p>
+                Genau deshalb ist die Seite nun auf lokale Suchbegriffe wie
+                "Café Ludwigsburg", "Eis Ludwigsburg" und "neu eröffnet
+                Ludwigsburg" ausgerichtet.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -172,7 +244,7 @@
             </article>
             <article class="visit-card">
               <h3>Passend für</h3>
-              <p>Espresso am Vormittag, Eis am Nachmittag, Spritz am Abend.</p>
+              <p>Kaffee am Vormittag, Eis am Nachmittag und Spritz am Abend.</p>
             </article>
             <article class="visit-card">
               <h3>Social</h3>
@@ -193,7 +265,7 @@
           <p>Kirchstraße 18, 71634 Ludwigsburg</p>
         </div>
         <div class="footer-actions">
-          <a class="button button-solid" href="https://maps.google.com/?q=Kirchstrasse+18+71634+Ludwigsburg" target="_blank" rel="noreferrer">
+          <a class="button button-solid" href="https://maps.google.com/?q=Kirchstraße+18+71634+Ludwigsburg" target="_blank" rel="noreferrer">
             Google Maps
           </a>
           <a class="button button-ghost" href="https://www.instagram.com/santos_iceandcoffeebar/" target="_blank" rel="noreferrer">
